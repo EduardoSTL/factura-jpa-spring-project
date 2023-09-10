@@ -13,10 +13,11 @@ public class IndexController {
     @Qualifier("miServicioComplejo")
     private IServicio servicio;
 
-    @GetMapping({"/","","/iindex"})
+    //ubicacion de la ruta de comunicacion con otros archivos,
+    //metodo que involucra la interfaz grafica
+    @GetMapping({"/","","/index"})
     public String index(Model model){
         model.addAttribute("objeto", servicio.operacion());
         return "index";
-
     }
 }

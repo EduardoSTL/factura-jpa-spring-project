@@ -15,7 +15,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Factura implements Serializable {
-    //numeros de version:
+    //numeros de version de factura:
     private static final long serialVersionUID = 946004357128146951L;
 
     @Value("${factura.descripcion}")

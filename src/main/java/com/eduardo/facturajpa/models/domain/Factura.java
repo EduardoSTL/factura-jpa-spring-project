@@ -35,6 +35,4 @@ public class Factura implements Serializable {
     public void destruit(){
         System.out.println("Factura destruida".concat(descripcion));
     }
-
-
 }
